@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form </title>
+</head>
+<body>
+    <h1>Please schedule your Trip</h1>
+    <body> 
+        <form action="success.html" method="get"> 
+            <label for="username" >Username</label>
+        <input type="text"  id="username"
+        name="username"
+        placeholder="Enter your name"
+         required/> 
+         <!-- value="Your name " placeholder me  username likha hoga dim me(give idea to the user)  -->
+        <br/><br/>
+         <label for ="pass">Password:</label>
+        <input type="password" id ="pass"  name="password"
+         required 
+         minlength="6" maxlength="9"
+         size="25"/>
+        <br/><br/>
+         <label for="phone" >Phone No:</label>
+         <input type="tel" id="phone" name="phone" 
+         placeholder="+91 1234567890"
+         required/>
+            <br/><br/>
+        <input type="submit"/>
+        </form>
+    </body>
+</body>
+</html>
