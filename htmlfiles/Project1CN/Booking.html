@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Schedule your Holiday Paradise Island </h1>
+    <form> 
+    <fieldset>
+        <legend><b>Personal Information</b></legend>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="fullname" placeholder="Your Full Name "required />  
+        <br/><br/>
+        <label for="mail">Email:</label>
+        <input type="text" id="mail" name="email" placeholder="abc@gmail.com" required />
+        <br/><br/>
+        <label for="Phone">Phone No:</label>
+        <input type="tel" id="Phone" name="phone" placeholder="+91 1234567890" required />
+        <br/><br/>
+        <label for="dob">Date Of Birth</label>
+    
+        <input type="date" id="dob" name="dob" 
+        min ="2000-11-05"
+        max="2025-11-05"
+        required />  
+        </fieldset>
+        <br/><br/>
+        <fieldset>
+            <legend><b>Trip Details</b></legend>
+        <label for="arr">Arrival Date</label>
+        <input type="datetime-local" id="arr" name="arrival" required />
+        <br/><br/>  
+        <label for ="dep">Departure </label>
+        <input type="datetime-local" id="dep" name="departure" required />   
+        <br/><br/>
+        <label for="traveller">No of traveller</label>
+        <input type="number" id="traveller" name="traveller" required/>
+        <br/><br/> 
+         <!-- accomodation preferance -->
+          <label for="pref">Accomodation Preferences</label>
+          <!-- put multiples in name="accomodation"multiple >to select multiple choices  -->
+           <select id="pref" name="accomodation" > 
+            <optgroup label="Hotels">
+                <option value="3-Star">3-Star</option> 
+                <option value="4-Star">4-Star</option>
+                <option value="5-Star">5-Star</option> </optgroup>
+
+            <!-- <option value="resort">Resort</option>  -->
+             <optgroup label="Resort">
+                <option value="3-Star">3-Star</option>
+                <option value="4-Star">4-Star</option>
+                <option value="5-Star">5-Star</option>
+             </optgroup>
+            <!-- <option value="villa">Villa</option> -->
+             <optgroup label="Villa">
+                <option value="3-Star">3-Star</option>
+                <option value="4-Star">4-Star</option>
+                <option value="5-Star">5-Star</option>
+             </optgroup>
+            <optgroup label="Guest House">
+                 <option value="3-Star">3-Star</option>
+                <option value="4-Star">4-Star</option>
+                <option value="5-Star">5-Star</option>
+                </optgroup>
+          </select>
+          <!-- selected for by default selection and multiple for multiple selection  -->
+        <fieldset>
+            <!-- <legend><b>Trip Details</b></legend> -->
+         <legend>Preferred Activities</legend>
+         <input type="checkbox" id="snorkeling" name="activity" value="snorkeling"/>
+         <label for="snorkeling">Snorkeling</label>
+         <br/></br/>
+             <input type="checkbox" id="hike" name="activity" value="hiking"/>
+             <label for="hike">Hiking</label>
+             <br/></br/>
+             <input type="checkbox" id="Spa" name="activity" value="spa"/>
+             <label for="Spa">Spa</label>
+             </fieldset>
+             <!-- checked  in input means by default it is selected -->
+                <br/></br/>
+                <p>Baby On Board</p>
+                <input type="radio"  name="Onboard" value="Yes"/>
+                <label>Yes</label>
+                <input type="radio"  name="Onboard" value="No" checked/>
+                <label>No</label>
+                <br/><br/>
+                <p><b>Speacial Requests</b></p>
+                <textarea name="requests" id="requests" cols="30" rows="5" placeholder="Enter your requests here..."></textarea>
+                <br/><br/>
+        <input type="submit"/>
+            </fieldset>
+            <br/><br/>
+            <!-- <input type="submit"/> -->
+            <!-- <input type="reset"/> -->
+             <!-- <input type="button" value="Verify"/> >>   this will only on the screen..iska backend tbhi chalega jb hum javascript se isey value provide krenge  -->
+              <button type="button" >Button</button>
+              <button type="reset">Reset</button>
+              <button type="submit">submit</button>
+            </form>
+    
+</body>
+</html>
